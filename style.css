@@ -12,6 +12,10 @@ h1 {
     font-size: 60px;
 }
 
+nav {
+    text-align: left;
+}
+
 nav ul li a {
     color:goldenrod;
     font-size: 22px;
