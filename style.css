@@ -176,14 +176,6 @@ main {
     column-gap: 1rem;
 }
 
-main h2 {
-    font-family: Ubuntu, sans-serif;
-    font-size: 2.5rem;
-    padding: 1rem;
-    color: #4A0B02;
-    text-shadow: 0.06rem 0.06rem #700D00;
-}
-
 main a {
     text-decoration: underline;
     padding: 0.5rem;
@@ -209,6 +201,13 @@ main a:hover {
     padding: 1rem;
 }
 
+.projectSidebar h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5rem;
+    color: #4A0B02;
+    text-shadow: 0.06rem 0.06rem #700D00;
+}
+
 /* Main Content - mainPage */
 .mainPage {
     background-color: #FFEED9;
@@ -217,6 +216,14 @@ main a:hover {
 
 #projectArticleWrapper {
     background-color: #FFD8A6;
+}
+
+.mainPage h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #4A0B02;
+    text-shadow: 0.06rem 0.06rem #700D00;
 }
 
 .mainPage img {
@@ -260,6 +267,7 @@ footer {
     padding: 1rem;
     line-height: 2.5rem;
     border-top: #FFD8A6 solid 1px;
+    text-align: center;
 }
 
 footer nav {
