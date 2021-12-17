@@ -199,6 +199,7 @@ main a:hover {
     background-color: #FFD8A6;
     border-radius: 1rem;
     padding: 1rem;
+    min-width: 16rem;
 }
 
 .projectSidebar h2 {
@@ -206,6 +207,36 @@ main a:hover {
     font-size: 2.5rem;
     color: #4A0B02;
     text-shadow: 0.06rem 0.06rem #700D00;
+}
+
+.projectSidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectSidebar ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.projectSidebar button {
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    color: #FFEED9;
+    text-shadow: 0.03rem black;
+    background-color: #700D00;
+    border: black solid 2px;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 11rem;
+}
+
+.projectSidebar button:hover {
+    background-color: #4A0B02;
+    color: white;
+    cursor: pointer;
 }
 
 /* Main Content - mainPage */

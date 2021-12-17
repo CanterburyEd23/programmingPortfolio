@@ -4,12 +4,13 @@
     <head>
         <title>Ed's Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <header>
+        <header class="headerBox">
             <div class="header" role="presentation">
                 <figure>
                     <img src="./images/ed1.jpeg" alt="Ed Hampton">
@@ -28,7 +29,15 @@
         <main>
             <section class="projectSidebar">
                 <h2>Recent Projects</h2>
-                <p>This section is under construction</p>
+                <p>This section is under construction</p><br>
+                <h2>Colourscheme Editor</h2>
+                <p>Fancy viewing this page in different colours?  Well you can!  Simply choose from the options below.<br><strong>Note: </strong>the Random! button may lead to the page being unreadable!</p>
+                <ul role="presentation">
+                    <li><button type="button" id="redButton">Red</button></li>
+                    <li><button type="button" id="greenButton">Green</button></li>
+                    <li><button type="button" id="blackButton">Black & White</button></li>                    
+                    <li><button type="button" id="randomButton">Random!</button></li>
+                </ul>
             </section>
             <section class="mainPage" role="presentation">
                 <img src="images/ed2.PNG" alt="Ed Hampton, portrait">
