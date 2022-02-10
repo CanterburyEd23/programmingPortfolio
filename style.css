@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 /* Imported Google Fonts */
 @font-face {
     font-family: 'Ubuntu';
@@ -79,6 +80,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
 /* Page Styling */
 body {
     background-color: #700D00;
@@ -92,6 +94,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 /* Header & Nav*/
 header {
@@ -119,7 +122,6 @@ header {
 }
 
 .header figure {
-    width: 25%;
     margin: 0;
     padding: 0;
     float: left;
@@ -134,18 +136,24 @@ header {
 }
 
 .header h1 {
-    width: 50%;
     text-shadow: 0.2rem 0.2rem black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+.shortTitle {
+    display: none;
 }
 
 .header nav {
-    width: 25%;
+    text-align: right;
+    margin-right: 2rem;
 }
 
 nav ul li {
-    display: inline-block;
     list-style-type: none;
-    margin-right: 3rem;
+    margin-right: 1rem;
     font-size: 1.5rem;
     text-shadow: 0.2rem 0.2rem black;
 }
@@ -165,6 +173,7 @@ nav a:visited {
 nav a:hover {
     color: #ffd8a6bb;
 }
+
 
 /* Main Content */
 main {
@@ -194,6 +203,14 @@ main a:hover {
     color: #FFEED9;
     background-color: #700D00;
 }
+
+
+/* Main Content - smallScreen Nav Bar */
+.smallScreenNavBar {
+    display: none;
+}
+
+
 /* Main Content - projectSidebar */
 .projectSidebar {
     background-color: #FFD8A6;
@@ -204,7 +221,7 @@ main a:hover {
 
 .projectSidebar h2 {
     font-family: Ubuntu, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #4A0B02;
     text-shadow: 0.06rem 0.06rem #700D00;
 }
@@ -238,6 +255,7 @@ main a:hover {
     color: white;
     cursor: pointer;
 }
+
 
 /* Main Content - mainPage */
 .mainPage {
@@ -289,6 +307,7 @@ main a:hover {
     width: 240px;
 }
 
+
 /* Footer */
 footer {
     width: 100%;
@@ -302,5 +321,77 @@ footer {
 }
 
 footer nav {
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu, sans-serif;    
+}
+footer nav ul li {
+    display: inline-block;
+}
+
+
+/* Media Query for smaller screens (tablet size) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .title {
+        display: none;
+    }
+    .shortTitle {
+        display: block;
+    }
+    .header nav {
+        margin-right: 1rem;
+    }
+    .header nav ul li {
+        font-size: 1.2rem;
+    }
+    main {
+        display: block;
+    }
+    .projectSidebar {
+        display: none;
+        margin-bottom: 1rem;
+    }
+    .projectSidebar h2 {
+        font-size: 1.3;
+    }
+    .mainPage {
+        width: 100%;
+        padding-bottom: 0.2rem;
+    }
+    .mainPage h2 {
+        /* font-size: 1.5rem; */
+    }
+    .projectArticle {
+        padding: 0.5rem;
+    }
+}
+
+
+/* Media Query for small screens (phone size) */
+@media only screen and (max-width: 480px) {
+    .header nav {
+        display: none;
+    }
+    .smallScreenNavBar {
+        display: block;        
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .smallScreenNavBar ul li {
+        display: inline-block;        
+        text-shadow: none;
+        background-color: #4A0B02;
+        border: 2px solid #FFD8A6;
+        border-radius: 1.5rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .smallScreenNavBar ul li a {
+        color: #FFEED9;
+        text-decoration: none;
+    }
 }
